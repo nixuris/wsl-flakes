@@ -2,9 +2,11 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs.tmux = {
     enable = true;
+    shell = "${pkgs.fish}/bin/fish";
 
     # History that survives a long build
     historyLimit = 50000;
