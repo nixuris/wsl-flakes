@@ -10,8 +10,6 @@
     mpc
     mpd
     ani-cli
-    easytag
-    nicotine-plus
   ];
   home.file.".config/rmpc".source = ../apps/config/rmpc;
   home.file.".config/mpd/mpd.conf".text = ''
