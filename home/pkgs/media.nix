@@ -2,17 +2,16 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   home.packages = with pkgs; [
     ffmpeg-full
     rmpc
     mpc
     mpd
-    mpv
     ani-cli
     easytag
     nicotine-plus
-    imv
   ];
   home.file.".config/rmpc".source = ../apps/config/rmpc;
   home.file.".config/mpd/mpd.conf".text = ''
