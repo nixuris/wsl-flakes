@@ -16,8 +16,6 @@
     ];
   };
   imports = [
-    ./pkgs/media.nix
-    #Other apps configs
     ./apps/vcs.nix
     ./apps/fish.nix
     ./apps/fastfetch.nix
@@ -25,5 +23,6 @@
     ./apps/yazi.nix
     ./apps/tmux.nix
     #./apps/ollama.nix
+    ./apps/misc.nix
   ];
 }
