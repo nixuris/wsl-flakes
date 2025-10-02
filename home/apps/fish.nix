@@ -43,6 +43,7 @@
       nvidia-gpu = "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia";
     };
     interactiveShellInit = ''
+      source ~/.nix-profile/etc/profile.d/nix.fish
       fastfetch
       set username (whoami)
       echo "				Welcome back, $username!"
